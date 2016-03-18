@@ -3,8 +3,6 @@ Chrome url detector content js
 @Author Cheng
 */
 
-function sendMessgae(message, sender, sendResponse){
-  
-}
-
-chrome.runtime.onMessage.addListener(sendMessgae)
+chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse){
+  sendResponse(document.title);
+})
