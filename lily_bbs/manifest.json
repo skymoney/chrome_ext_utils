@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Lily BBS",
+  "description": "extension for lily bbs",
+  "version": "0.1",
+
+  "page_action": {
+    "default_icon": {
+      "19": "img/icon.png",
+      "38": "img/icon.png"
+    },
+    "default_title": "Lily BBS"
+  },
+  "permissions": ["tabs"],
+
+  "content_scripts": [
+    {
+      "matches": ["http://bbs.nju.edu.cn/*", "https://bbs.nju.edu.cn/*"],
+      "js": ["lily.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
