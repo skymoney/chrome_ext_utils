@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse){
 function changeLink(){
   var content = document.body.textContent;
   //document.body.style.backgroundColor = 'red';
-  var detect_links = content.match(/http:\/\/[\w|.|\/]+/g)
+  var detect_links = content.match(/http(s)?:\/\/[\w|.|\/]+/g)
 
   if(detect_links == null){
     detect_links = [];
