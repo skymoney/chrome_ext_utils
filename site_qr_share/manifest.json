@@ -1,12 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "site qr code share",
-  "description": "convert site to qr code for sharing",
+  "name": "二维码分享",
+  "description": "当前网站转换成二维码扫描分享",
   "version": "1.0",
+  "icons": {"16": "icon16.png", "32": "icon32.png",
+    "48": "icon48.png", "128": "icon128.png"},
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "icon16.png",
     "default_title": "site share",
     "default_popup": "popup.html"
   },
